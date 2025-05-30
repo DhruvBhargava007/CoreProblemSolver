@@ -1,0 +1,267 @@
+Every problem will need its own tracker file.
+
+====================================================================
+1. GENERAL STORAGE PALLET FULL
+--------------------------------------------------------------------
+Description:
+Monitor all general storage pallet locations. When any pallet reaches 80% full, swap it with an empty pallet and move the full one to the ready-to-stow location. Assign a primary problem solver (use a dummy name if unknown).
+
+Steps to Resolve:
+- Assign an employee (dummy name if not known) as Primary Problem Solver.
+- Monitor fill level of all general storage pallets.
+- When a pallet reaches 80% full:
+  * Swap with an empty pallet.
+  * Move the full pallet to the ready-to-stow location.
+- Document the swap and movement.
+
+Data to Collect:
+- Old pallet ID (being replaced)
+- New pallet ID (empty pallet)
+- Name of employee/problem solver (dummy if unknown)
+
+Escalation:
+- If unable to swap or move, escalate to supervisor or Ops Manager (log dummy name if needed).
+
+====================================================================
+2. IRS (INBOUND REACH SERVICES) PALLET FULL
+--------------------------------------------------------------------
+Description:
+Monitor all IRS pallet locations. When any IRS pallet is 80% full, notify the IRS Point of Contact (POC) via the Ops channel, swap for an empty pallet, and move the full one to the IRS area.
+
+Steps to Resolve:
+- Assign an employee (dummy name if not known) as Primary Problem Solver.
+- Monitor IRS pallets.
+- When a pallet reaches 80% full:
+  * Notify IRS POC via Ops channel (log dummy name if unknown).
+  * Swap with an empty pallet.
+  * Move full pallet to IRS area.
+- Document the swap, notification, and movement.
+
+Data to Collect:
+- Old pallet ID
+- New pallet ID
+- Name of IRS POC notified (dummy if unknown)
+- Name of employee/problem solver (dummy if unknown)
+
+Escalation:
+- If IRS POC cannot be reached or issue persists, escalate to next-level supervisor (log dummy name).
+
+====================================================================
+3. LIVE PROBLEM SOLVE ERRORS
+--------------------------------------------------------------------
+Description:
+Monitor live problem solve pallets (typically 6 locations). Resolve errors within 2–10 minutes. If 2+ pallets are over 80% full, escalate staffing (split lines among problem solvers).
+
+Steps to Resolve:
+- Monitor all live problem solve pallet locations.
+- When errors are present:
+  * Attempt resolution within 2–10 minutes.
+  * Identify error type and follow specific flow (see other tasks) or use General Ticket if not matched.
+- If 2+ pallets >80% full:
+  * Escalate for additional staffing (log names of those contacted).
+- Document all actions taken.
+
+Data to Collect:
+- Error type (map to specific flow or General Ticket)
+- Time to resolve
+- Name(s) of staff involved (dummy if unknown)
+- Escalation details if staffing increased
+
+Escalation:
+- If errors persist or cannot be resolved, escalate to supervisor or Ops Manager.
+
+====================================================================
+4. SELLER BLOCKED (SHUTDOWN)
+--------------------------------------------------------------------
+Description:
+When a Seller Blocked (shutdown) error is detected, escalate immediately to the Ops Manager or Supervisor. Stage affected pallets at receiver stations and reintroduce to the line once resolved.
+
+Steps to Resolve:
+- Detect Seller Blocked error.
+- Escalate to Ops Manager/Supervisor (log dummy name if unknown).
+- Stage blocked pallets at receiver stations.
+- Reintroduce pallets to the line after clearance.
+- Document escalation and actions.
+
+Data to Collect:
+- Pallet IDs affected
+- Name of Ops Manager/Supervisor contacted (dummy if unknown)
+- Time of escalation and resolution
+
+Escalation:
+- Immediate escalation required.
+
+====================================================================
+5. MISSING EXPIRATION AT SHIPPING
+--------------------------------------------------------------------
+Description:
+When an item is missing an expiration date at shipping, update the catalog to mark "Can Expire" as Yes. If unable to resolve, escalate via Asana to Brand Manager.
+
+Steps to Resolve:
+- Locate item in catalog.
+- Mark "Can Expire" as Y.
+- If further action needed, escalate via Asana to Brand Manager (log dummy name if unknown).
+- Attach screenshot if escalation occurs.
+- Document all updates and escalations.
+
+Data to Collect:
+- SKU/Product ID
+- Order ID
+- Expiration Date (MM/YYYY)
+- Screenshot (if escalated)
+- Name of Brand Manager (dummy if unknown)
+
+Escalation:
+- If catalog update does not resolve, escalate via Asana.
+
+====================================================================
+6. NO PRINTABLE LABEL FOUND
+--------------------------------------------------------------------
+Description:
+When no printable label is found, follow the REACH Operations guide for error resolution. Track product details and document steps taken.
+
+Steps to Resolve:
+- Access REACH Operations guide.
+- Follow step-by-step instructions for error resolution.
+- Track and document product details and actions.
+
+Data to Collect:
+- Product identifier (SKU, etc.)
+- Steps taken per guide
+- Outcome
+
+Escalation:
+- If unresolved, escalate to support (log dummy name if unknown).
+
+====================================================================
+7. SHELF ERRORS (E.G., MISSING DATA)
+--------------------------------------------------------------------
+Description:
+Submit a Shelf Error request via Excel. Provide all necessary details for support and future trend analysis.
+
+Steps to Resolve:
+- Complete Shelf Error request form.
+- Provide SKU, shelf page, steps to recreate error, and screenshot if possible.
+- Submit request and document submission.
+
+Data to Collect:
+- Product identifier (SKU, Component, Item ID)
+- Shelf page
+- Steps to recreate error
+- Screenshot (optional)
+- Additional info (optional)
+
+Escalation:
+- If unresolved, escalate to tech support or supervisor.
+
+====================================================================
+8. BRAND FEEDBACK
+--------------------------------------------------------------------
+Description:
+Submit feedback to Brand Manager for issues such as mislabeled products, missing barcodes, packaging quality, etc.
+
+Steps to Resolve:
+- Complete feedback form.
+- Provide brand name, product identifier, issue description, and at least one photo.
+- Submit to Brand Manager (log dummy name if unknown).
+- Document submission.
+
+Data to Collect:
+- Brand name
+- Product identifier (SKU, etc.)
+- Description of issue
+- Photo(s)
+
+Escalation:
+- If no response, escalate to next-level contact.
+
+====================================================================
+9. RESEARCH REQUEST
+--------------------------------------------------------------------
+Description:
+Submit a research request for trend analysis, insights, or special investigation.
+
+Steps to Resolve:
+- Complete research request form.
+- Provide detailed problem statement and additional context.
+- Submit and document request.
+
+Data to Collect:
+- Problem statement
+- Additional context
+
+Escalation:
+- If urgent or unresolved, escalate to analytics lead (dummy name if unknown).
+
+====================================================================
+10. GENERAL TICKET MANAGEMENT
+--------------------------------------------------------------------
+Description:
+For any issue not covered by specific flows, use General Ticket Management. Review IRS issues and resolve with provided steps, collecting all applicable details.
+
+Steps to Resolve:
+- Ask user which details are relevant to the issue (provide all options).
+- Collect all applicable data.
+- Follow provided steps for resolution.
+- Document all actions and data collected.
+
+Data to Collect:
+- All relevant details as per user input and issue type
+
+Escalation:
+- If unresolved, escalate to supervisor or support.
+
+====================================================================
+NOTES ON BOT BEHAVIOR AND DATA HANDLING
+--------------------------------------------------------------------
+- For each task, every action, escalation, and data point must be logged in an output tracker file (Excel or similar).
+- If a required name or contact is unknown, use a dummy value (e.g., "John Doe").
+- For tasks involving scanning, prompt user to scan item or enter number.
+- For any issue not matching a specific category, prompt the user to submit a General Ticket with a brief description and required details.
+- All escalations must be tracked with time, reason, and contact (real or dummy).
+- If a step requires a manual or physical action, prompt the user with clear instructions (e.g., "Scan old pallet ID now").
+- Each problem type should have its own log/tracker for audit and review.
+
+====================================================================
+END OF TASKS
+
+Step 1: Scan Mode (Default)
+- Camera always ready for scanning
+- Large scan target area
+- Vibration feedback on successful scan
+
+Step 2: Auto-Population
+- Pre-fill known data
+- Use last known good values
+- Remember common escalation contacts
+
+Step 3: One-Touch Escalation
+- Quick-select contact list
+- Pre-filled escalation templates
+- Auto-timestamp all actions
+
+<ScannerView>
+  - Always-on camera
+  - Auto-detect barcodes
+  - Haptic feedback
+  - Voice confirmation
+</ScannerView>
+
+<QuickActionsBar>
+  - Scan Toggle
+  - Escalate
+  - Save & New
+  - Complete
+</QuickActionsBar>
+
+<SmartForm>
+  - Auto-advance fields
+  - Scan/Type toggle
+  - Voice input option
+  - Default values
+</SmartForm>
+
+// Instead of camera integration
+<ScanButton onClick={() => handleScan()}>
+  Click to Simulate Scan
+</ScanButton>
